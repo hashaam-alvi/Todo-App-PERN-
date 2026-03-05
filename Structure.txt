@@ -26,7 +26,11 @@ Todo App:
         4. Edit a task.
         5. Mark a task as done.
 
-link: 
+DB & Rest/Express
+    db.any()	        0 or more rows
+    db.one()	        exactly 1 row
+    db.oneOrNone()  	0 or 1 row
+    db.none()	        no result
 
-    Vercel: https://todo-app-mern-ecru-alpha.vercel.app/
+
     
