@@ -12,8 +12,11 @@ Railway:
 PostgreSQL:
     Used as a local storage.
 
+PostgreSQL Neon:
+    Can Use as a cloud storage. https://console.neon.tech/
+
 Vercel:
-    Used to deploy our Frontend (React).
+    Can Use to deploy our Frontend (React). 
 
 Different Dependencies can be found in Package.json files.
 
