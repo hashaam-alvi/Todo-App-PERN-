@@ -36,7 +36,7 @@ export default function AddNewTodo({ refresh, closeModal, existingTodo }) {
         body: JSON.stringify({ username, content }),
       }); */
 
-        await axios.patch(`${BASE_URL}/todos/${existingTodo._id}`, todoData);
+        await axios.patch(`${BASE_URL}/todos/${existingTodo.id}`, todoData);
     } else {
       /* await fetch(`${BASE_URL}/todos`, {
         method: "POST",

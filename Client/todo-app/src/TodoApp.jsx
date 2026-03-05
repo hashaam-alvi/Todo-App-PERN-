@@ -41,7 +41,7 @@ export default function TodoApp() {
   return (
     <div className="TodoAppContainer">
       <h1 className="title">
-        <span>MERN</span> Todo's
+        <span>PERN</span> Todo's
       </h1>
 
       <TodoList

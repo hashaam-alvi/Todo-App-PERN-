@@ -6,7 +6,7 @@ export default function TodoItem({ todo, refresh, openEditModal }) {
     // await fetch(`${BASE_URL}/todos/${todo._id}`, {
     //   method: "DELETE",
     // });
-    await axios.delete(`${BASE_URL}/todos/${todo._id}`);
+    await axios.delete(`${BASE_URL}/todos/${todo.id}`);
     refresh();
   };
 
@@ -14,19 +14,19 @@ export default function TodoItem({ todo, refresh, openEditModal }) {
     // await fetch(`${BASE_URL}/todos/${todo._id}/toggle`, {
     //   method: "PATCH",
     // });
-    await axios.patch(`${BASE_URL}/todos/${todo._id}/toggle`);
+    await axios.patch(`${BASE_URL}/todos/${todo.id}/toggle`);
     refresh();
   };
 
   return (
     <li className="TodoListLi">
       <div className="TodoListItems">
-        <span className={`todo-text ${todo.completed ? "completed" : ""}`} >{todo.content}</span>
+        <span className={`todo-text ${todo.complete ? "completed" : ""}`} >{todo.content}</span>
         <div className="TodoItembutton">
-          <button className="doneBtn" disabled={todo.completed}  onClick={toggle}>
+          <button className="doneBtn" disabled={todo.complete}  onClick={toggle}>
             Done
           </button>
-          <button className="editBtn" disabled={todo.completed}  onClick={() => openEditModal(todo)}>
+          <button className="editBtn" disabled={todo.complete}  onClick={() => openEditModal(todo)}>
             Edit
           </button>
           <button className="delBtn" onClick={deleteTodo}>

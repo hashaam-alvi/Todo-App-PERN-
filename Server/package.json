@@ -12,6 +12,7 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "method-override": "^3.0.0",
-    "mongoose": "^9.2.1"
+    "mongoose": "^9.2.1",
+    "pg-promise": "^12.6.1"
   }
 }

@@ -5,7 +5,7 @@ export default function TodoList({ todos, refresh, openEditModal }) {
     <ol className="TodoList">
       {todos.map((todo) => (
         <TodoItem
-          key={todo._id}
+          key={todo.id}
           todo={todo}
           refresh={refresh}
           openEditModal={openEditModal}
